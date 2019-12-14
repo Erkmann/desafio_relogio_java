@@ -24,14 +24,14 @@ public class Index {
                 angulo = (this.minuto - (this.hora * 5)) * 6; /* multiplica o numero da hora por 5 para saber quantos
                                                                 minutos no relogio o ponteiro teria andado
                                                                depois diminue a quantidade de minutos, e por fim
-                                                               multiplica por 6 que eh a quantos graus existem entre
+                                                               multiplica por 6 que eh quantos graus existem entre
                                                                um minuto e o outro no relogio analogico */
                 return angulo;
             }
             else if(dividido < (float) this.hora){//se o numero no relogio do minuto for menor q o da hora
                 angulo = ((this.hora * 5) - this.minuto) * 6; /* mesmo processo, porem tira-se minutos da hora
-                                                               (quase como se fosse girar o relogio no sentido
-                                                               contrario, para utilizar a menor angulacao possivel entre os ponteiros */
+                                                               (como se fosse girar o relogio no sentido
+                                                               contrario, para utilizar a menor angulacao possivel entre os ponteiros) */
 
                 return angulo;
             }
